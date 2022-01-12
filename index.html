@@ -1,0 +1,36 @@
+
+<link rel="stylesheet" href="style.css">
+
+<body id="b">
+<script>
+
+
+  var colors = [   Math.random() * (255 )  ,Math.random() * (255 ),Math.random() * (255 ) ]
+  console.table(colors)
+  document.getElementById("b").style = `background-color: rgb(${colors[0]},${colors[1]}, ${colors[2]} )`
+function go(){
+if (document.forms["in"]["in1"].value == "clear"){ document.getElementById("out").innerHTML = "" ; ;}
+  else{
+for(var c=1; c<=Number(document.forms["in"]["in1"].value); ++c){
+  document.getElementById("out").innerHTML += c ;
+  document.getElementById("out").innerHTML += "<br>" ;
+}
+var anlen;
+var f = Number(document.forms["in"]["in1"].value);
+if (f>15){anlen = Math.random()*10} else{anlen = f}
+
+document.getElementById("out").style = `animation-name:mycolor; animation-duration:${anlen}s ; animation-iteration-count:infinite;`
+
+}
+
+}
+
+</script>
+
+<h1 id="h">number counter</h1>
+<form name="in"><input name="in1"></form>
+<button id="go" hight=100000 onclick="go();">go</button>
+<p id="out"></p>
+<script>  document.getElementById("h").style = `color: rgb(${Math.random() * (255 ) },${Math.random() * (255 ) },${Math.random() * (255 ) });`
+</script>
+</body>

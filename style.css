@@ -1,0 +1,25 @@
+@keyframes mycolor{
+	from{color: white; backgound-color: black;}
+	10%{color: orange;backgound-color: #ff3997}
+	25%{color: red; backgound-color: blue}
+	50%{color: yellow; backgound-color: green}
+	75%{color:green ;backgound-color: black  } 
+	to{color: #ff3996}
+}
+
+
+body{
+	background-color: rgb(0,0,0);
+
+}
+
+button:hover{
+	width: 100;
+	height: 100;
+}
+input:focus{
+	border: 4px inset red;
+  	border-radius: 4px;
+
+}
+h1{color: rgb(255,0,255);};h2{color: rgb(255,255,255);};h3{color: rgb(255,255,255);};h4{color: rgb(255,255,255);};h5{color: rgb(255,255,255);};h6{color: rgb(255,255,255);};p{color: rgb(255,255,255);} 
